@@ -4,7 +4,17 @@
 # loaded once.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+require 'untied-consumer-sync-mongoid'
+require 'support/setup_models'
+require 'untied-consumer-sync/backend/backend_shared_example'
+
 RSpec.configure do |config|
+  Untied::Consumer::Sync.configure do |c|
+    c.model_data = "spec/support/model_data.yml"
+    c.service_name = "my_service"
+  end
+
   config.treat_symbols_as_metadata_keys_with_true_values = true
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
