@@ -19,13 +19,9 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
+  gem.add_development_dependency "debugger"
 
-  #gem.add_runtime_dependency 'untied-consumer-sync'
-  gem.add_runtime_dependency 'mongoid'
+  gem.add_runtime_dependency 'untied-consumer-sync', '~> 0.0'
+  gem.add_runtime_dependency 'mongoid', '~> 3.0'
 
-   if RUBY_VERSION < "1.9"
-    gem.add_development_dependency "ruby-debug"
-  else
-    gem.add_development_dependency "debugger"
-  end
 end
