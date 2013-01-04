@@ -2,7 +2,7 @@ require 'mongoid'
 
 module SetupModels
   Mongoid.configure do |config|
-    config.connect_to("dl_spec")
+    config.connect_to("untied_consumer_mongoid_spec")
   end
 
   # Models
@@ -13,6 +13,8 @@ module SetupModels
     field :my_id, :type => String
     field :login, :type => String
     field :name, :type => String
-    field :zombie, :type => String, :default => true
+    field :zombie, :type => Boolean, :default => true
+
+    attr_accessible :my_id, :login, :name
   end
 end
