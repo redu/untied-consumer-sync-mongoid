@@ -6,6 +6,10 @@ A Mongoid backend for [Untied::Consumer::Sync](https://github.com/redu/untied-co
 
 [![Build Status](https://travis-ci.org/redu/untied-consumer-sync.png)](https://travis-ci.org/redu/untied-consumer-sync-mongoid)
 
+## Compatibility
+
+Tested against MRI 1.9.3.
+
 ## Installation
 
 Add this line to your application's Gemfile:
