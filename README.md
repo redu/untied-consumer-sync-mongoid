@@ -1,10 +1,6 @@
-# Untied::Consumer::Sync::Mongoid
+# Untied::Consumer::Sync::Mongoid [![Build Status](https://travis-ci.org/redu/untied-consumer-sync.png)](https://travis-ci.org/redu/untied-consumer-sync-mongoid) [![Dependency Status](https://gemnasium.com/redu/untied-consumer-sync-mongoid.png)](https://gemnasium.com/redu/untied-consumer-sync-mongoid)
 
 A Mongoid backend for [Untied::Consumer::Sync](https://github.com/redu/untied-consumer-sync).
-
-**Build status**
-
-[![Build Status](https://travis-ci.org/redu/untied-consumer-sync.png)](https://travis-ci.org/redu/untied-consumer-sync-mongoid)
 
 ## Compatibility
 
